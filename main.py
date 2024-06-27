@@ -18,7 +18,7 @@ def convert_and_upscale_images(input_folder, output_folder):
             original_size = img.size
 
             # Calculate new size (2x upscale)
-            new_size = (original_size[0] * 2, original_size[1] * 2)
+            new_size = (original_size[0] * 3, original_size[1] * 3)
 
             # Resize the image
             upscaled_img = img.resize(new_size, Image.LANCZOS)
